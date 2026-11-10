@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The tree of thoughts</title>
+<style>
+  body {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 1000px;
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #1b1e23;
+    background: #fff;
+  }
+  h1 { margin: 0.5em 0 0.25em; }
+  #chart svg { display: block; }
+  footer { margin-top: 1em; font-size: 13px; color: #666; }
+</style>
+</head>
+<body>
+<h1>The tree of thoughts</h1>
+<p>A probabilistic tree structure based on a given text prompt is a way of visually representing the different possible continuations of that text</p>
+<p>You can generate your own data using <a href="https://colab.research.google.com/drive/1zdUS0bIR8IIbQjxMkvPLdofiImlDR3mn#scrollTo=2eSvM9zX_2d3">this notebook</a> 🖤</p>
+
+<div id="chart"></div>
+
+<footer>
+  © <a href="https://tigor.net/me">tigor</a> (<a href="mailto:me@tigor.net">me@tigor.net</a>), licensed under
+  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+  Built with <a href="https://d3js.org">D3</a> (ISC).
+</footer>
+
+<script src="./vendor/d3/d3.min.js"></script>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
